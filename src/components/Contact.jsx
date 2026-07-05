@@ -50,7 +50,7 @@ function Contact() {
 
             <div>
               <h3>Location</h3>
-              <p>Bihar, India</p>
+              <p>Sabzibagh, Bakarganj, Patna, Bihar, India - 800004</p>
             </div>
           </div>
 

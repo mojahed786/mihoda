@@ -6,18 +6,15 @@ function About() {
 
       <div className="about-left">
 
-        <img
-          src="/about.png"
-          alt="Civil Engineer"
-        />
 
       </div>
 
       <div className="about-right">
-
+        <div className="section-title">
         <span className="section-tag">
-          ABOUT ME
+          About me
         </span>
+        </div>
 
         <h2>
           Passionate Civil Engineer Dedicated to Building the Future

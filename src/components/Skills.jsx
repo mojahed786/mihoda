@@ -1,3 +1,4 @@
+/*
 import {
   FaHtml5,
   FaCss3Alt,
@@ -141,3 +142,5 @@ function Skills() {
 }
 
 export default Skills;
+
+*/

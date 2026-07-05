@@ -48,16 +48,20 @@ function Footer() {
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
 
         </div>
 
         <div className="footer-col">
 
-          <h3>Services</h3>
+          <h3>Skills</h3>
 
           <a href="#services">Structural Design</a>
           <a href="#services">AutoCAD Drafting</a>
-          <a href="#services">Site Supervision</a>
+          <a href="#services">Revit</a>
+          <a href="#services">Retail Fit-out Design</a>
+          <a href="#services">Interior Fit-Out Execution</a>
           <a href="#services">Estimation</a>
 
         </div>
@@ -66,7 +70,7 @@ function Footer() {
 
           <h3>Contact</h3>
 
-          <p>Bihar, India</p>
+          <p>Sabzibagh, Bakarganj, Patna, Bihar, India - 800004</p>
 
           <p>mihoda360@gmail.com</p>
 

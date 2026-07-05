@@ -29,25 +29,6 @@ function Hero() {
 
         </div>
 
-        <div className="hero-stats">
-
-          <div>
-            <h3>30+</h3>
-            <span>Projects</span>
-          </div>
-
-          <div>
-            <h3>3+</h3>
-            <span>Years Learning</span>
-          </div>
-
-          <div>
-            <h3>10+</h3>
-            <span>Clients</span>
-          </div>
-
-        </div>
-
       </div>
 
       <div className="hero-image">

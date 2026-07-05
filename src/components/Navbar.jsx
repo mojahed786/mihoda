@@ -64,11 +64,6 @@ function Navbar() {
           </a>
         </li>
 
-        <li>
-          <a href="#skills" onClick={() => setMenuOpen(false)}>
-            Skills
-          </a>
-        </li>
 
         <li>
           <a href="#projects" onClick={() => setMenuOpen(false)}>
