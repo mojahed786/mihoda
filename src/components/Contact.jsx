@@ -1,12 +1,46 @@
+import { useState } from "react";
 import {
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
-  FaLinkedin,
-  FaGithub,
 } from "react-icons/fa";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const phone = "919065336069"; // Apna WhatsApp Number
+
+    const text = `*New Contact Form Message*
+
+👤 Name: ${formData.name}
+
+📧 Email: ${formData.email}
+
+📌 Subject: ${formData.subject}
+
+💬 Message:
+${formData.message}`;
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="section-title">
@@ -19,6 +53,7 @@ function Contact() {
 
       <div className="contact-container">
 
+        {/* Left Side */}
         <div className="contact-left">
 
           <div className="contact-card">
@@ -26,7 +61,7 @@ function Contact() {
               <FaEnvelope />
             </div>
 
-            <div>
+            <div className="contact-details">
               <h3>Email</h3>
               <p>mihoda360@gmail.com</p>
             </div>
@@ -37,7 +72,7 @@ function Contact() {
               <FaPhoneAlt />
             </div>
 
-            <div>
+            <div className="contact-details">
               <h3>Phone</h3>
               <p>+91 9065336069</p>
             </div>
@@ -48,7 +83,7 @@ function Contact() {
               <FaMapMarkerAlt />
             </div>
 
-            <div>
+            <div className="contact-details">
               <h3>Location</h3>
               <p>Sabzibagh, Bakarganj, Patna, Bihar, India - 800004</p>
             </div>
@@ -56,26 +91,43 @@ function Contact() {
 
         </div>
 
-        <form className="contact-form">
+        {/* Right Side Form */}
+        <form className="contact-form" onSubmit={handleSubmit}>
 
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
           />
 
           <input
             type="text"
+            name="subject"
             placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
           />
 
           <textarea
             rows="6"
+            name="message"
             placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
           ></textarea>
 
           <button type="submit">
@@ -85,7 +137,6 @@ function Contact() {
         </form>
 
       </div>
-
     </section>
   );
 }
