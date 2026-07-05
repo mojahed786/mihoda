@@ -88,9 +88,7 @@ function Navbar() {
       {/* Right Side */}
       <div className="nav-right">
 
-        <button className="hire-btn">
-          Hire Me
-        </button>
+       
 
         <button
           className="theme-btn"
