@@ -24,6 +24,15 @@ function Experience() {
         "Specialized in advanced construction planning, project management, cost estimation, scheduling, quality control, and risk management. Developed expertise in managing complex construction projects with a focus on structural safety, resource optimization, and sustainable engineering practices.",
     },
 
+     {
+      icon: <FaGraduationCap />,
+      year: "2025 - 2026",
+      title: "PGDCA (Post Graduate Diploma in Computer Applications)",
+      company: "",
+      description:
+        "Focusing on programming, web development, database management, and networking. The course enhances problem-solving abilities, software development skills, and practical IT knowledge. It prepares students for careers in software development, IT support, and other technology-driven fields.",
+    },
+
     {
       icon: <FaBriefcase />,
       year: "2023 - Present",

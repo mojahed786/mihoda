@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
 import {
   FaHardHat,
   FaBars,
@@ -38,10 +39,8 @@ function Navbar() {
 
       {/* Logo */}
       <div className="logo">
-        <span>
-          MI <span>HODA</span>
-        </span>
-      </div>
+  <img src={logo} alt="MI HODA Logo" className="logo-img" />
+</div>
 
       {/* Navigation */}
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>

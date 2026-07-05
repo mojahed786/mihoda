@@ -162,17 +162,14 @@ z-index:1000;
 }
 
 .logo{
+    display: flex;
+    align-items: center;
+}
 
-display:flex;
-
-align-items:center;
-
-gap:10px;
-
-font-size:28px;
-
-font-weight:700;
-
+.logo-img{
+    height: 55px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo-icon{
@@ -1251,4 +1248,10 @@ RESPONSIVE
   .scroll-top{
     right:20px;
   }
+
+  @media (max-width:768px){
+    .logo-img{
+        height:40px;
+    }
+}
 }
